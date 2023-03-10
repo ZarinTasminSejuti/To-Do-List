@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 
+
 function List() {
 
     const [input, setInput] = useState("");
@@ -20,22 +21,29 @@ function List() {
     }
 
     return (
-      <div className="container">
+
+      <div className="container" style ={{backgroundImage: `url("note.png")`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize:"cover"
+}}>
+
         <div className="header">
             <h1>To-Do List</h1>
         </div>
         <div className="form">
-            <input onChange={handleChange} type="text" value={input} />
-            <button onClick={addItem}>
+           
+            <input onChange={handleChange} type="text" placeholder="Type Your Items Here..." value={input} />
+            <button class="button1" onClick={addItem}>
                 <span>Add</span>
             </button>
         </div>
 
-        <div>
-            <ul>
+        <div className="list">
+            <ol>
                 {items.map(todoItem => <li>{todoItem}</li> )}
-            </ul>
+            </ol>
         </div>
+        
       </div>
     );
   }
