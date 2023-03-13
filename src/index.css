@@ -1,5 +1,6 @@
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -9,6 +10,11 @@ body {
   width: 100%;
 }
 
+.formButton {
+  margin: 100px auto 0;
+  width: 730px;
+  display: flex;
+}
 
 h1{
   margin-top: auto;
@@ -17,23 +23,24 @@ h1{
   color:#055c49;
 }
 
-.form button {
+ .button1 {
   background-color:#055c49;
   border: none;
   color: white;
-  padding: 15px 28px;
+  margin-top: 8px;
+  margin-left: 20px;
+  padding: 11px 90px;
   text-align: center;
   text-decoration: none;
   transition-duration: 0.2s;
-  display: inline-block;
   font-size: 18px;
   border-radius: 6px;
   font-weight: bold;
-  margin: 50px 50px;
   cursor: pointer;
+  float: right;
 }
 
-.form .button1:hover {
+.button1:hover {
   background-color: white;
   border: 2px solid #055c49;
   color: #f61350;
@@ -41,19 +48,22 @@ h1{
 }
 
 .form input{
-  width: 30%;
+  width: 450px;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
   border-radius: 4px;
   border: 2px solid red;
 }
 
+.list{
+  width: 730px;
+  margin: 50px auto;
+}
 
 .list ol{
   list-style-position: inside;
   font-size: 20px;
   font-weight: bold;
-  color:#055c49;
-  margin: 0;
+  color: #055c49;
+  text-align: left;
 }

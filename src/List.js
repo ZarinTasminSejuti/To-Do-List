@@ -30,17 +30,22 @@ function List() {
         <div className="header">
             <h1>To-Do List</h1>
         </div>
-        <div className="form">
-           
-            <input onChange={handleChange} type="text" placeholder="Type Your Items Here..." value={input} />
-            <button class="button1" onClick={addItem}>
-                <span>Add</span>
-            </button>
+
+        <div className="formButton">
+            <div className="form">
+                <input onChange={handleChange} type="text" placeholder="Type Your Items Here..." value={input} />
+            </div>
+
+            <div>
+                <button class="button1" onClick={addItem}>
+                        <span>Add</span>
+                </button>
+            </div>
         </div>
 
         <div className="list">
             <ol>
-                {items.map(todoItem => <li>{todoItem}</li> )}
+                {items.map(todoItem => <li><span>{todoItem}</span></li> )}
             </ol>
         </div>
         
