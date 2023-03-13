@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ToDoItem from "./ToDoItem";
 
 
 function List() {
@@ -45,7 +45,7 @@ function List() {
 
         <div className="list">
             <ol>
-                {items.map(todoItem => <li><span>{todoItem}</span></li> )}
+                {items.map(todoItem => <ToDoItem text = {todoItem}/> )}
             </ol>
         </div>
         
