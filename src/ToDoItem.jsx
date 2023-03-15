@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 
-
 function ToDoItem(props){
 
     const [isDone, setIsDone] = useState(false);
@@ -16,7 +15,6 @@ function ToDoItem(props){
     function deleteItem(){
             const newItems = props.items.filter((ele, index) => index !== props.id); 
             props.setItems(newItems);
-            //return newItems;   
         }
        
    
@@ -35,7 +33,6 @@ function ToDoItem(props){
                     <span>Delete</span>
                     
                  </button>
-
                 
             </div>
            
