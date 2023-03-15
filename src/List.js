@@ -37,7 +37,7 @@ function List() {
             </div>
 
             <div>
-                <button class="button1" onClick={addItem}>
+                <button className="button1" onClick={addItem}>
                         <span>Add</span>
                 </button>
             </div>
@@ -45,10 +45,17 @@ function List() {
 
         <div className="list">
             <ol>
-                {items.map(todoItem => <ToDoItem text = {todoItem}/> )}
+                {items.map((todoItem, index) => ( 
+                <ToDoItem 
+                key = {index}
+                id = {index}
+                text = {todoItem}
+                items = {items}
+                setItems = {setItems} /> ))}
             </ol>
+
         </div>
-        
+     
       </div>
     );
   }

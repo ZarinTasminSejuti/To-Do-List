@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
 }
+.header{
+  text-align: center;
+}
 
 .container {
-  text-align: center;
   background-color: blanchedalmond;
   height: 950px;
   width: 100%;
@@ -44,7 +46,6 @@ h1{
   background-color: white;
   border: 2px solid #055c49;
   color: #f61350;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 2px 15px 0 rgba(0,0,0,0.10);
 }
 
 .form input{
@@ -66,4 +67,31 @@ h1{
   font-weight: bold;
   color: #055c49;
   text-align: left;
+}
+
+
+.allButtons{
+ text-align: right;
+}
+
+.button2 {
+  background-color:#10de99;
+  border: none;
+  color: #055c49;
+  padding: 10px 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color: #f61350;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
 }
